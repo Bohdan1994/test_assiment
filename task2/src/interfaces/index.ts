@@ -5,10 +5,6 @@ export interface TeamMember {
   role: Role;
 }
 
-export type Role = "Administrator" | "Standard";
-
-export type Status = "request" | "pending" | "approved" | "declined" | "invited";
-
 export interface UserShortData {
   id: number;
   name: string;
@@ -23,3 +19,7 @@ export interface Invite {
   role: Role;
   status: Status;
 }
+
+export type Role = "Administrator" | "Standard";
+
+export type Status = "request" | "pending" | "approved" | "declined" | "invited";
