@@ -27,8 +27,7 @@ const obj = {
 };
 
 function get(obj, path, defaultValue) {
-  const pathWithoutSpecSymbolsExceptDot = path.replace(/[^\w\s.]|_/g, "").replace(/\s+/g, " ");
-  const keys = pathWithoutSpecSymbolsExceptDot.split('.');
+  const keys = path.split('.');
 
   const iter = (o, i) => {
     if (o[keys[i]] === undefined) {
